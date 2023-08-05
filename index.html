@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Alejandro Díaz | Desarrollo Web</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://tinypic.host/images/2023/08/04/icono_portafolio.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" id="fonts-css" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Exo%3Awght%40300%3B400%3B500%3B600%3B700%3B800%3B900&amp;ver=1.0.0" media="all">
+    <script src="https://kit.fontawesome.com/6a25a9a025.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?display=swap&family=Comfortaa&#038;ver=1689872970" />
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="https://tinypic.host/images/2023/08/04/icono_portafolio.png" width="50" alt="Logo de la página web" id="logo">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section id="inicio1" class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="https://tinypic.host/images/2023/08/03/user_icon.png" alt="Foto de alejandro" id="fotoperfil">
+        <h1>Hola, soy Alejandro Díaz</h1>
+        <br>
+        <h2>Estudiante de la carrera de desarrollo de sistemas de la información.</h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo" id="nombre">Conoce a Alejandro Díaz</h2>
+        <p class="seccion-texto" id="descripcion">¡Hola! Soy un apasionado estudiante de Desarrollo de Sistemas de la Información y me encuentro en la etapa junior de mi carrera como desarrollador web. Poseo conocimientos sólidos en HTML, CSS y JavaScript, lo que me permite crear páginas web atractivas y funcionales. Además, cuento con experiencia en el uso de React y Spring, lo que me permite desarrollar aplicaciones web interactivas y dinámicas. Me emociona trabajar con estas tecnologías, ya que me permiten crear experiencias de usuario únicas y mejorar la usabilidad de las aplicaciones. </p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- card front -->
+          <div class="columna col-12 col-md-4" id="front">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Front-End</p>
+            <p>Poseo conocimientos sólidos en desarrollo front-end, incluyendo HTML, CSS y JavaScript, para crear interfaces de usuario atractivas y responsivas. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">React</span>
+            </div>
+          </div>
+          <!-- card back -->
+          <div class="columna col-12 col-md-4" id="back">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Back-End</p>
+            <p>Tengo experiencia en el desarrollo de aplicaciones del lado del servidor utilizando diferentes lenguajes como Node.js, Python y PHP, y la implementación de lógica empresarial y manejo de bases de datos. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Spring</span>
+              <span class="badge text-bg-primary">.Net</span>
+              <span class="badge text-bg-primary">Node.js</span>
+            </div>
+          </div>
+          <!-- card bd -->
+          <div class="columna col-12 col-md-4" id="bd">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Base de datos</p>
+            <p> Estoy familiarizado con bases de datos relacionales (por ejemplo, MySQL, PostgreSQL) y puedo diseñar y consultar datos eficientemente para aplicaciones web y móviles. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">SQL Server</span>
+              <span class="badge text-bg-primary">MySql</span>
+              <span class="badge text-bg-primary">Oracle Database</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://tinypic.host/images/2023/08/04/galeria05.jpeg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://tinypic.host/images/2023/08/04/galeria03.jpeg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 2</p>
+                
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://tinypic.host/images/2023/08/04/galeria02.jpeg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 3</p>
+                
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://tinypic.host/images/2023/08/04/galeria04.jpeg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://tinypic.host/images/2023/08/04/image2734c3c0c29c555c.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 5</p>
+                
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://tinypic.host/images/2023/08/04/image1184adfd419e6eeb.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 6</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://google.com/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis futuros clientes...</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="https://tinypic.host/images/2023/08/04/matias.md.jpeg" alt="Foto de Gino">
+              <p class="testimonio-texto">¡Increíble experiencia trabajando con este profesional! Su habilidad para el desarrollo front-end es excepcional, logrando que nuestra página web luzca moderna y funcional. ¡Lo recomendaría sin duda alguna!.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Matias</p>
+                <p class="cargo">Cliente</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="https://tinypic.host/images/2023/08/04/roger.jpeg" alt="Foto de Nora">
+              <p class="testimonio-texto">El servicio de back-end proporcionado por este experto fue impecable. Su dominio de distintos lenguajes y tecnologías hizo que nuestro proyecto fuera un éxito. Definitivamente, lo contrataremos nuevamente.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Roger</p>
+                <p class="cargo">Cliente</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="https://tinypic.host/images/2023/08/04/kevin.jpeg" alt="Foto de Leonardo">
+              <p class="testimonio-texto">"Nos encantó trabajar con este especialista en bases de datos. Su eficiencia y conocimiento nos ayudaron a optimizar nuestras consultas y mejorar el rendimiento de nuestra aplicación. ¡Muy satisfechos con los resultados obtenidos.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Kevin</p>
+                <p class="cargo">Cliente</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:alejandro6uuu6@gmail.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="https://tinypic.host/images/2023/08/04/logo_en_blanco.png" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Aprendo y creo todos los días.<br></p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" id="twitter">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://github.com/aaaalejandro" target="_blank" rel="noopener noreferrer" id="github">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" id="linkedin">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" id="instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:alejandro6uuu6@gmail.com" target="_blank" rel="noopener noreferrer" id="correo">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Alejandro Díaz (2023) &#169;</div>
+    </footer>
+    <!-- boton subir -->
+    <a href="#" class="scrollup">Scroll</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- CDN DEL JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+  
+    <!-- EFECTO DEL JQUERY, GRACCIAS AL CDN FUNCIONA -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      $("body, html").hide().fadeIn(1000);     
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+  
+          $(window).scroll(function(){
+              if ($(this).scrollTop() > 100) {
+                  $('.scrollup').fadeIn();
+              } else {
+                  $('.scrollup').fadeOut();
+              }
+          });
+  
+          $('.scrollup').click(function(){
+              $("html, body").animate({ scrollTop: 0 }, 600);
+              return false;
+          });
+  
+      });
+  </script>
+  <script>
+    window.sr= ScrollReveal(),
+    sr.reveal('#logo', {
+    delay: 375,
+    duration: 500,
+    reset: true
+    });
+    sr.reveal('#fotoperfil', {
+        duration:1000,
+        origin:"left",
+        distance:"500px"
+    });
+    sr.reveal('.navbar-nav', {
+        duration:1000,
+        origin:"left",
+        distance:"500px"
+    });
+    sr.reveal('#nombre', {
+        duration:3000,
+        origin:"right",
+        distance:"500px"
+    });
+    sr.reveal('#front', {
+        duration:1000,
+        origin:"top",
+        distance:"500px"
+    });
+    sr.reveal('#back', {
+        duration:2000,
+        origin:"top",
+        distance:"500px"
+    });
+    sr.reveal('#bd', {
+        duration:3000,
+        origin:"top",
+        distance:"500px"
+    });
+    sr.reveal('#testimonios-carrusel', {
+        duration:3000,
+        origin:"bottom",
+        distance:"500px"
+    });
+    sr.reveal('#twitter', {
+        duration:1000,
+        origin:"bottom",
+        distance:"500px"
+    });
+    sr.reveal('#github', {
+        duration:1050,
+        origin:"bottom",
+        distance:"500px"
+    });
+    sr.reveal('#linkedin', {
+        duration:1100,
+        origin:"bottom",
+        distance:"500px"
+    });
+    sr.reveal('#instagram', {
+        duration:1150,
+        origin:"bottom",
+        distance:"500px"
+    });
+    sr.reveal('#correo', {
+        duration:1200,
+        origin:"bottom",
+        distance:"500px"
+    });
+    </script> 
+    <script src="https://kit.fontawesome.com/6a25a9a025.js" crossorigin="anonymous"></script>
+  </body>
+</html>
