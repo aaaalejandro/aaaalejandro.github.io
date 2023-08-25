@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Servicios Turisticos</title>
+<link rel="stylesheet" href="./style/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="./style/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="./style/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="./style/flexsliderpersonal.css" type="text/css">
+<link rel="stylesheet" href="./style/estilos.css">
+<link rel="shorcut icon" href="https://www.miguelpallin.com/img/favicon.png">
+<script src="./style/jquery-3.3.1.js.descargar" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+<meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;jQuery&quot;:&quot;1.6.2&quot;,&quot;SPDY&quot;:-1,&quot;Bootstrap&quot;:-1}"><script type="text/javascript" src="chrome-extension://fhhdlnnepfjhlhilgmeepgkhjmhhhjkh/js/detector.js"></script></head>
+
+<body inject_svd="true" inject_newsvd="true">
+
+
+    <style>
+        .stylish-navbar {
+                background-color: #1c1c1c; /* Color de fondo oscuro */
+                border-bottom: 2px solid #444; /* Un sutil borde en la parte inferior */
+            }
+            .stylish-navbar .nav-link {
+                padding: 0.5rem 1rem;
+                transition: background-color 0.3s, color 0.3s; /* Animación suave al pasar el mouse */
+            }
+            .stylish-navbar .nav-link:hover {
+                background-color: #333; /* Color de fondo al pasar el mouse */
+                color: #fff;
+            }
+            .stylish-navbar .dropdown-menu {
+                background-color: #2c2c2c; /* Color de fondo para el menú desplegable */
+                border: 1px solid #444; /* Borde para el menú desplegable */
+            }
+            .stylish-navbar .dropdown-item {
+                transition: background-color 0.3s, color 0.3s; /* Animación suave al pasar el mouse en los ítems del menú desplegable */
+            }
+            .stylish-navbar .dropdown-item:hover {
+                background-color: #333; 
+                color: #fff;
+            }
+            .stylish-navbar .navbar-toggler-icon {
+                background-color: #555; /* Ajuste de color para el toggler en dispositivos móviles */
+            }
+            #pie, #iconos {
+                background-color: #1c1c1c; /* Color de fondo oscuro */
+            }
+        
+            #pie {
+                background-color: #1c1c1c; /* Color de fondo oscuro */
+                border-top: 2px solid ; /* Un sutil borde en la parte superior */
+            }
+        
+            #pie p, .iconos a {
+                transition: color 0.3s; /* Suavizar la transición de color */
+            }
+        
+            #pie p:hover, .iconos a:hover {
+                color: #888; /* Un gris más claro al pasar el mouse, para hacerlo más interactivo */
+            }
+        
+            #pie .fas {
+                margin-bottom: 10px;
+                transition: color 0.3s; /* Suavizar la transición de color para el ícono */
+            }
+        
+            #pie .fas:hover {
+                color: #888; /* Cambiar el color del ícono al pasar el mouse */
+            }
+        
+            .ico {
+                font-size: 24px;
+                margin: 0 15px;
+                transition: color 0.3s, transform 0.3s; /* Suavizar la transición de color y transformación */
+            }
+        
+            .ico:hover {
+                color: #888;
+                transform: scale(1.2); /* Aumentar ligeramente el tamaño al pasar el mouse */
+            }
+            /*Guia */
+            .vineta {
+                list-style-type: none;
+                padding-left: 0;
+            }
+
+            .buen {
+                margin-bottom: 20px;
+                position: relative;
+                padding-left: 30px;
+            }
+
+            .buen::before {
+                content: '\2713';  /* Esto es una "palomita" o check mark */
+                position: absolute;
+                left: 0;
+                color: #007BFF;  /* Color de bootstrap primary */
+                font-size: 20px;
+            }
+
+        </style>
+        <nav class="cabeza navbar navbar-expand-lg navbar-dark fixed-top stylish-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="inicio.html">
+                    <img src="./style/logo.png" width="250px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="inicio.html">Inicio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="promociones.html">Promociones</a>
+              </li>
+                 <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="traslados.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Servicios
+                </a>
+                <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="traslados.html">Traslados</a>
+                  <a class="dropdown-item" href="guiadetrabajo.html">Guia de Trabajo</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="citytourlima.html" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  City Tours
+                </a>
+                <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdownMenuLink">
+                 <a class="dropdown-item" href="citytourlima.html">City Tours Lima</a>
+                  <a class="dropdown-item" href="limayparacas.html">Lima y Paracas</a>
+                  <a class="dropdown-item" href="limaparacasica.html">Lima - Paracas e Ica</a>
+                  <a class="dropdown-item" href="limaparacasicanazca.html">Lima - Paracas - Ica y Nazca</a>
+                </div>
+              </li>
+                 <li class="nav-item">
+                <a class="nav-link" href="galeriadefotos.html">Galeria de Fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactenos.html">Contáctenos</a>
+              </li>
+            </ul>
+          </div>
+         </div>
+        </nav>
+    <section id="contenido-traslados" class="mt-5 pt-4 bg-light">
+        <div class="container mt-5">
+            <h3 class="text-primary mt-5 pt-5 mb-4 border-bottom pb-2">Traslados Aeropuertos de Lima</h3>
+            <ul class="vineta">
+		        <li class="buen">&nbsp;Bienvenidos a AR.VI.RI. Servicios Turísticos,&nbsp;el más económico de los servicios de traslados en Lima. Somos la empresa oficial de traslado del Aeropuerto de Lima,con Registro en el ministerio de turismo (MINCETUR) y
+autorizados por el ministerio de transportes y comunicaciones del
+Perú.
+			</li>
+			
+			<li class="buen text-justify mb-3">
+                Bienvenidos a AR.VI.RI. Servicios Turísticos, el más económico de los servicios de traslados en Lima. Somos la empresa oficial de traslado del Aeropuerto de Lima, con Registro en el ministerio de turismo (MINCETUR) y autorizados por el ministerio de transportes y comunicaciones del Perú.
+            </li>
+			
+			<li class="buen">
+			A su llegada a Lima, después de haber pasado por la zona de reclamo de equipaje y aduanas, recibirá una cálida bienvenida por parte de nuestro conductor uniformado sosteniendo un letrero con nuestro logo y su nombre, por lo que es muy fácil para usted encontrarlo.
+			</li>
+			
+			<li class="buen">
+				El pago por adelantado no siempre será necesario. Usted podrá realizarlo directamente a nuestro conductor al final de su viaje en efectivo.
+			</li>
+			
+			<li class="buen">
+				Ofrecemos vehículos para 1 A 2 pasajero (SEDAN),1 A 5 pasajero (VAN),6 a 10pasajeros (SPRINTER),10 a 22pasajeros (MINIBUS) y 22-40 pasajeros (BUS.)
+			</li>
+			
+			<li class="buen">
+				&nbsp;Nuestros vehículos son cómodos, limpios, modernos y equipados con aire acondicionado,&nbsp;y una música suave y relajante durante su viaje.
+			</li>
+			
+			<li class="buen">
+				&nbsp;También ofrecemos a nuestros clientes otros servicios de Tours tales como PRIVADO o COMPARTIDO Lima City Tour, Santuario de Pachacamac, Fuentes de Lima, Museo Larco, Cena Show, Tour Gastronómico y otras excursiones en todo el Perú a petición.
+
+			</li>
+			
+			<li class="buen">
+				Igualmente una opción de SERVICIO POR HORA para visitar Lima y sus atracciones turísticas (sitios arqueológicos, museos, etc) o para negocios.
+			</li>
+			
+			<li class="buen text-justify mb-3">
+                Reserve ahora en línea su traslado!
+            </li>
+        </ul>
+    </div>
+</section>
+<!--Iconos de Redes Sociales-->
+<section class="btns" id="iconos">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="iconos text-center p-5 text-white">
+				
+					<a href="https://www.facebook.com/" target="_blank"><i class="ico fab fa-facebook-f"></i></a>
+					
+					<a href="https://www.youtube.com/" target="_blank"><i class="ico fab fa-youtube"></i></a>
+					
+					<a href="https://pe.linkedin.com/" target="_blank"><i class="ico fab fa-linkedin-in"></i></a>
+					
+					<a href="https://web.whatsapp.com/" target="_blank"><i class="ico fab fa-whatsapp"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer id="pie" class="p-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 text-white text-center">
+				<p>Dirección: Avenida Las Cuzadas 2020 frente a los Robles.</p>
+			</div>
+			<div class="col-lg-3 text-white text-center">
+				<p>Cell: 988 913 338 //
+				<br>
+				 Cell: (01)368-1260
+				 </p>
+			</div>
+			<div class="col-lg-3 text-white text-center">
+				<p>e-mail
+				<br>
+					miguel_luz@hotmail.com
+				</p>
+			</div>
+				<div class="col-lg-3 text-white text-center">
+				<p>
+				<span class="fas fa-book-open"></span>
+				<br>
+				Libro de Reclamaciones
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./style/jquery-3.3.1.slim.min.js.descargar" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="./style/popper.min.js.descargar" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="./style/bootstrap.min.js.descargar" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="./style/jquery.min.js.descargar"></script>
+<script src="./style/jquery.flexslider.js.descargar"></script>
+<script src="https://kit.fontawesome.com/6a25a9a025.js" crossorigin="anonymous"></script>
+<!-- Place in the <head>, after the three links -->
+<script>
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            pauseOnAction: true,
+            pauseOnhover: true,
+            touch: true,
+            slideshowSpeed: 10000,
+        });
+    });
+</script>
+<div id="popupMenu" style="display: none;"></div><div id="newsvd_popupMenu" style="display: none;"></div><div id="newsvd_popupMenu"></div><div style="display:none;" class="newsvd_mengceng"><div id="newsvd_backMask" class="backMask">    <div id="pop" class="pop">    <div id="newsvd_notice" class="notice" "="">        <div id="newsvd_notice_in" class="notice_in">             <div class="notice_in_svg"><svg t="1669280615610" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2722" width="16" height="16"><path d="M514.048 59.392q93.184 0 174.592 35.328t142.336 96.768 96.256 143.36 35.328 175.104-35.328 175.616-96.256 143.872-142.336 96.768-174.592 35.328-175.104-35.328-142.848-96.768-96.256-143.872-35.328-175.616 35.328-175.104 96.256-143.36 142.848-96.768 175.104-35.328zM795.648 423.936q18.432-18.432 19.456-45.568t-17.408-45.568-45.056-17.92-45.056 18.944l-288.768 288.768-99.328-98.304q-18.432-18.432-45.056-18.944t-45.056 17.92-18.944 43.52 17.92 43.52l142.336 143.36q18.432 18.432 48.128 17.92t48.128-18.944l-4.096 4.096z" p-id="2723" fill="#71b601"></path></svg></div>             <div class="notice_in_span" id="newsvd_notice_in_span"><span>We will support it soon!  Click</span> <span id="external_ffmpeg" class="external_ffmpeg">2k/4k</span> <span>to download videos first.</span></div>        </div>    </div>    <div id="newsvd_dialog" class="newsvd_dialog"><div class="top_pro_container"><div class="top_pro">Pro</div><span class="top_pro_span">Subscription will automatically renew every month before you unsubscribe.</span></div>        <div id="newsvd_dialog_close" class="newsvd_dialog_close"><svg t="1669283546396" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4105" width="20" height="20"><path d="M794.8 794.8c-14 14-36.9 14-50.9 0L229.2 280.1c-14-14-14-36.9 0-50.9s36.9-14 50.9 0L794.9 744c13.9 13.9 13.9 36.8-0.1 50.8z" p-id="4106" fill="#2c2c2c"></path><path d="M794.8 229.2c14 14 14 36.9 0 50.9L280.1 794.8c-14 14-36.9 14-50.9 0s-14-36.9 0-50.9L744 229.1c13.9-13.9 36.8-13.9 50.8 0.1z" p-id="4107" fill="#2c2c2c"></path></svg></div>        <div id="newsvd_dialog_in" class="dialog_in">        <div id="pro" class="pro">            <span>Monthly</span>        </div>        <div class="dialog_line"></div>        <div id="feature_explain" class="feature_explain">            <span id="fee" class="fee">                <span>$ 2.99</span>                <span> / month</span>            </span>            <div id="feature_list" class="feature_list">                <ul id="feature_list_ul">                    <li>                        <svg t="1669288565685" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2753" width="16" height="16"><path d="M959.846 509.535c0 247.319-200.527 447.846-447.846 447.846l0 0c-247.378 0-447.846-200.527-447.846-447.846l0 0c0-247.319 200.467-447.846 447.846-447.846l0 0c247.319 0 447.846 200.527 447.846 447.846l0 0z" p-id="2754" fill="#00c0be"></path></svg>                        <span>1000+ embedded vimeo player sites supported</span>                    </li>                    <li>                        <svg t="1669288565685" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2753" width="16" height="16"><path d="M959.846 509.535c0 247.319-200.527 447.846-447.846 447.846l0 0c-247.378 0-447.846-200.527-447.846-447.846l0 0c0-247.319 200.467-447.846 447.846-447.846l0 0c247.319 0 447.846 200.527 447.846 447.846l0 0z" p-id="2754" fill="#00c0be"></path></svg>                        <span>Support video downloading in more resolutions e.g. 4k, 2k, 1080p, etc.</span>                    </li>                    <li>                        <svg t="1669288565685" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2753" width="16" height="16"><path d="M959.846 509.535c0 247.319-200.527 447.846-447.846 447.846l0 0c-247.378 0-447.846-200.527-447.846-447.846l0 0c0-247.319 200.467-447.846 447.846-447.846l0 0c247.319 0 447.846 200.527 447.846 447.846l0 0z" p-id="2754" fill="#00c0be"></path></svg>                        <span>Support for downloading private videos</span>                    </li>                    <li>                        <svg t="1669288565685" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2753" width="16" height="16"><path d="M959.846 509.535c0 247.319-200.527 447.846-447.846 447.846l0 0c-247.378 0-447.846-200.527-447.846-447.846l0 0c0-247.319 200.467-447.846 447.846-447.846l0 0c247.319 0 447.846 200.527 447.846 447.846l0 0z" p-id="2754" fill="#00c0be"></path></svg>                        <span>Support for extracting audio</span>                    </li>                    <li>                        <svg t="1669288565685" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2753" width="16" height="16"><path d="M959.846 509.535c0 247.319-200.527 447.846-447.846 447.846l0 0c-247.378 0-447.846-200.527-447.846-447.846l0 0c0-247.319 200.467-447.846 447.846-447.846l0 0c247.319 0 447.846 200.527 447.846 447.846l0 0z" p-id="2754" fill="#00c0be"></path></svg>                        <span>Support for downloading subtitles</span></li>                    <li>                        <svg t="1669288565685" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2753" width="16" height="16"><path d="M959.846 509.535c0 247.319-200.527 447.846-447.846 447.846l0 0c-247.378 0-447.846-200.527-447.846-447.846l0 0c0-247.319 200.467-447.846 447.846-447.846l0 0c247.319 0 447.846 200.527 447.846 447.846l0 0z" p-id="2754" fill="#00c0be"></path></svg>                        <span>Unlimited downloads</span>                    </li>                </ul>            </div>        </div>        <button id="newsvd_dialog_get" class="dialog_get">Get</button>        <p style="text-align: center;font-size: 12px;color:#888483;margin-bottom: 15px;">Click <span id="payment_method" style="color:#08ABEF;cursor: pointer;">here</span> to get other payment method</p>    </div>    <p style="text-align: center;font-size: 12px;">Tip：Please refresh the page after the payment is successful</p>    </div></div></div></div><div id="payment_popup" style="display:none;"><div class="payment_content"><div id="payment_popup_close" class="dialog_close" style="margin-left: 370px;"><svg t="1669283546396" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4105" width="20" height="20"><path d="M794.8 794.8c-14 14-36.9 14-50.9 0L229.2 280.1c-14-14-14-36.9 0-50.9s36.9-14 50.9 0L794.9 744c13.9 13.9 13.9 36.8-0.1 50.8z" p-id="4106" fill="#2c2c2c"></path><path d="M794.8 229.2c14 14 14 36.9 0 50.9L280.1 794.8c-14 14-36.9 14-50.9 0s-14-36.9 0-50.9L744 229.1c13.9-13.9 36.8-13.9 50.8 0.1z" p-id="4107" fill="#2c2c2c"></path></svg></div><h3 style="text-align:center;margin-top: 20px;line-height:40px;">What is the payment method you want？</h3><p style="text-align:center;font-size:12px;color:#888483">We will gradually support it</p><div class="payment_select"><input type="radio" id="paypal" name="payment_method" value="paypal" class="payment_select_label"><label for="paypal" class="payment_label">PayPal</label><br><input type="radio" id="braintree" name="payment_method" value="braintree" class="payment_select_label"><label for="braintree" class="payment_label">Braintree</label><br><input type="radio" id="alipay" name="payment_method" value="alipay" class="payment_select_label"><label for="alipay" class="payment_label">Alipay</label><br><input type="radio" id="other" name="payment_method" value="other" class="payment_select_label"><label for="other" class="payment_label"><input id="otherPayment"></label></div><button id="pay_submit" style="cursor: pointer;border: none;display: block;border-radius: 5px;background-color: #367ECB;height: 30px;width: 100px;line-height: 30px;margin: 22px auto 17px;font-weight: 600;color: white">Submit</button></div></div><div id="screenRecording-controls" style="display: none;"><div id="screenRecording-controls__open-settings-btn"><img src="chrome-extension://aedjbikomeapejcckjfakkilkjcakkpi/images/inject/gear.png"></div><div id="screenRecording-controls__settings"><div id="screenRecording-controls__settings__logo-container"><img src="chrome-extension://aedjbikomeapejcckjfakkilkjcakkpi/images/inject/logo.png"></div><div id="screenRecording-controls__settings__main-btn" class="screenRecording-controls__settings__btn screenRecording-controls__settings__btn_active"><img src="chrome-extension://aedjbikomeapejcckjfakkilkjcakkpi/images/inject/pause.png"></div><div id="screenRecording-controls__settings__stop-btn" class="screenRecording-controls__settings__btn"><img src="chrome-extension://aedjbikomeapejcckjfakkilkjcakkpi/images/inject/stop.png"></div><div id="screenRecording-controls__settings__close-btn" class="screenRecording-controls__settings__btn"><img src="chrome-extension://aedjbikomeapejcckjfakkilkjcakkpi/images/inject/close.png"></div></div></div><div id="yt_article_summary_widget_wrapper" class="yt_article_summary_widget_wrapper" style="display: none;">
+        <div id="yt_article_summary_widget" class="yt_article_summary_widget"><svg style="filter: brightness(0.8);" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-outside-1_3606_3145" maskUnits="userSpaceOnUse" x="1" y="1" width="22" height="22" fill="black">
+                <rect fill="white" x="1" y="1" width="22" height="22"></rect>
+                <path d="M20.6816 10.1843C20.9588 9.34066 21.0063 8.4399 20.8192 7.57245C20.6321 6.70499 20.217 5.90134 19.6157 5.24216C19.0143 4.58298 18.2478 4.09146 17.393 3.81692C16.5382 3.54238 15.6253 3.49449 14.7459 3.67805C14.1453 3.01747 13.379 2.52468 12.524 2.24931C11.669 1.97394 10.7555 1.92571 9.87559 2.10947C8.99568 2.29324 8.18039 2.70252 7.51181 3.29608C6.84323 3.88965 6.34499 4.64654 6.06725 5.49055C5.18642 5.67292 4.3699 6.08122 3.70003 6.67426C3.03017 7.26731 2.53064 8.02413 2.25182 8.86842C1.97299 9.71271 1.92474 10.6146 2.11192 11.4832C2.2991 12.3517 2.71509 13.1562 3.31795 13.8155C3.09309 14.4899 3.01633 15.2037 3.09278 15.9095C3.16924 16.6154 3.39716 17.2971 3.76139 17.9093C4.30169 18.8351 5.12567 19.568 6.11483 20.0027C7.104 20.4373 8.20738 20.5512 9.26631 20.328C9.74353 20.8568 10.3291 21.2796 10.9844 21.5684C11.6396 21.8571 12.3495 22.0053 13.0672 22.003C14.1516 22.003 15.2081 21.6635 16.0847 21.0334C16.9612 20.4034 17.6125 19.5152 17.9449 18.4968C18.649 18.3539 19.3141 18.0649 19.8962 17.6489C20.4784 17.233 20.9642 16.6997 21.3214 16.0843C21.8585 15.1598 22.0858 14.0915 21.9709 13.032C21.856 11.9724 21.4048 10.9758 20.6816 10.1843ZM13.0798 20.6968C12.191 20.6968 11.3302 20.3894 10.6473 19.828L10.7677 19.7593L14.8029 17.4593C14.9069 17.4047 14.9935 17.3225 15.0528 17.2221C15.1121 17.1216 15.1418 17.0068 15.1386 16.8905V11.2655L16.8427 12.2405C16.8517 12.2441 16.8594 12.2501 16.865 12.2579C16.8706 12.2656 16.8739 12.2748 16.8744 12.2843V16.9343C16.876 17.4289 16.7785 17.9189 16.5875 18.3761C16.3964 18.8333 16.1156 19.2488 15.7611 19.5985C15.4067 19.9482 14.9856 20.2253 14.5222 20.4138C14.0588 20.6023 13.5621 20.6984 13.0608 20.6968H13.0798ZM4.90165 17.2593C4.46164 16.5029 4.3026 15.6189 4.45188 14.7593L4.57224 14.828L8.60749 17.128C8.70379 17.1829 8.81303 17.2118 8.92423 17.2118C9.03543 17.2118 9.14467 17.1829 9.24097 17.128L14.1758 14.3218V16.253C14.1797 16.2608 14.1817 16.2694 14.1817 16.278C14.1817 16.2867 14.1797 16.2953 14.1758 16.303L10.0962 18.628C9.66403 18.8748 9.18685 19.0352 8.69188 19.0999C8.19692 19.1647 7.69387 19.1326 7.21148 19.0055C6.72909 18.8784 6.27681 18.6587 5.88048 18.3591C5.48415 18.0595 5.15154 17.6858 4.90165 17.2593ZM3.83741 8.5843C4.28764 7.82089 4.99655 7.23878 5.83919 6.94055V11.6718C5.83595 11.7857 5.86434 11.8983 5.92128 11.9975C5.97823 12.0966 6.06156 12.1785 6.16227 12.2343L11.0717 15.028L9.36766 16.003C9.34918 16.0092 9.32914 16.0092 9.31065 16.003L5.23106 13.678C4.36041 13.1812 3.72487 12.3642 3.46364 11.4059C3.20242 10.4476 3.33682 9.42624 3.83741 8.56555V8.5843ZM17.8563 11.7968L12.9278 8.9718L14.6319 8.00305C14.6403 7.99741 14.6502 7.99439 14.6604 7.99439C14.6705 7.99439 14.6805 7.99741 14.6889 8.00305L18.7685 10.328C19.3915 10.684 19.8992 11.2072 20.2325 11.8368C20.5659 12.4664 20.7111 13.1764 20.6514 13.8843C20.5916 14.5921 20.3294 15.2687 19.8951 15.8352C19.4608 16.4017 18.8724 16.8349 18.1983 17.0843V12.353C18.1946 12.2391 18.1612 12.1281 18.1013 12.0306C18.0414 11.9332 17.957 11.8527 17.8563 11.7968ZM19.554 9.2968L19.4336 9.2218L15.4047 6.9093C15.3047 6.84846 15.1896 6.81624 15.0721 6.81624C14.9547 6.81624 14.8395 6.84846 14.7396 6.9093L9.8111 9.71555V7.75305C9.8061 7.7445 9.80346 7.7348 9.80346 7.72492C9.80346 7.71505 9.8061 7.70535 9.8111 7.6968L13.897 5.37805C14.5222 5.02257 15.2371 4.85003 15.958 4.88059C16.6789 4.91115 17.3762 5.14356 17.9682 5.55064C18.5601 5.95772 19.0225 6.52265 19.301 7.17939C19.5796 7.83614 19.663 8.55755 19.5413 9.2593L19.554 9.2968ZM8.87989 12.7218L7.1695 11.753C7.15339 11.7405 7.1422 11.7228 7.13782 11.703V7.06555C7.13785 6.35289 7.34371 5.65499 7.73128 5.0536C8.11885 4.45222 8.67209 3.97224 9.32619 3.6699C9.98029 3.36756 10.7082 3.25537 11.4246 3.34647C12.141 3.43757 12.8162 3.7282 13.3712 4.1843L13.2636 4.25305L9.21563 6.55305C9.11158 6.60765 9.02504 6.68981 8.96573 6.79029C8.90642 6.89076 8.87669 7.00557 8.87989 7.1218V12.7218ZM9.80476 10.753L11.9966 9.50305L14.1948 10.753V13.253L11.9966 14.503L9.79843 13.253L9.80476 10.753Z"></path>
+                </mask>
+                <path d="M20.6816 10.1843C20.9588 9.34066 21.0063 8.4399 20.8192 7.57245C20.6321 6.70499 20.217 5.90134 19.6157 5.24216C19.0143 4.58298 18.2478 4.09146 17.393 3.81692C16.5382 3.54238 15.6253 3.49449 14.7459 3.67805C14.1453 3.01747 13.379 2.52468 12.524 2.24931C11.669 1.97394 10.7555 1.92571 9.87559 2.10947C8.99568 2.29324 8.18039 2.70252 7.51181 3.29608C6.84323 3.88965 6.34499 4.64654 6.06725 5.49055C5.18642 5.67292 4.3699 6.08122 3.70003 6.67426C3.03017 7.26731 2.53064 8.02413 2.25182 8.86842C1.97299 9.71271 1.92474 10.6146 2.11192 11.4832C2.2991 12.3517 2.71509 13.1562 3.31795 13.8155C3.09309 14.4899 3.01633 15.2037 3.09278 15.9095C3.16924 16.6154 3.39716 17.2971 3.76139 17.9093C4.30169 18.8351 5.12567 19.568 6.11483 20.0027C7.104 20.4373 8.20738 20.5512 9.26631 20.328C9.74353 20.8568 10.3291 21.2796 10.9844 21.5684C11.6396 21.8571 12.3495 22.0053 13.0672 22.003C14.1516 22.003 15.2081 21.6635 16.0847 21.0334C16.9612 20.4034 17.6125 19.5152 17.9449 18.4968C18.649 18.3539 19.3141 18.0649 19.8962 17.6489C20.4784 17.233 20.9642 16.6997 21.3214 16.0843C21.8585 15.1598 22.0858 14.0915 21.9709 13.032C21.856 11.9724 21.4048 10.9758 20.6816 10.1843ZM13.0798 20.6968C12.191 20.6968 11.3302 20.3894 10.6473 19.828L10.7677 19.7593L14.8029 17.4593C14.9069 17.4047 14.9935 17.3225 15.0528 17.2221C15.1121 17.1216 15.1418 17.0068 15.1386 16.8905V11.2655L16.8427 12.2405C16.8517 12.2441 16.8594 12.2501 16.865 12.2579C16.8706 12.2656 16.8739 12.2748 16.8744 12.2843V16.9343C16.876 17.4289 16.7785 17.9189 16.5875 18.3761C16.3964 18.8333 16.1156 19.2488 15.7611 19.5985C15.4067 19.9482 14.9856 20.2253 14.5222 20.4138C14.0588 20.6023 13.5621 20.6984 13.0608 20.6968H13.0798ZM4.90165 17.2593C4.46164 16.5029 4.3026 15.6189 4.45188 14.7593L4.57224 14.828L8.60749 17.128C8.70379 17.1829 8.81303 17.2118 8.92423 17.2118C9.03543 17.2118 9.14467 17.1829 9.24097 17.128L14.1758 14.3218V16.253C14.1797 16.2608 14.1817 16.2694 14.1817 16.278C14.1817 16.2867 14.1797 16.2953 14.1758 16.303L10.0962 18.628C9.66403 18.8748 9.18685 19.0352 8.69188 19.0999C8.19692 19.1647 7.69387 19.1326 7.21148 19.0055C6.72909 18.8784 6.27681 18.6587 5.88048 18.3591C5.48415 18.0595 5.15154 17.6858 4.90165 17.2593ZM3.83741 8.5843C4.28764 7.82089 4.99655 7.23878 5.83919 6.94055V11.6718C5.83595 11.7857 5.86434 11.8983 5.92128 11.9975C5.97823 12.0966 6.06156 12.1785 6.16227 12.2343L11.0717 15.028L9.36766 16.003C9.34918 16.0092 9.32914 16.0092 9.31065 16.003L5.23106 13.678C4.36041 13.1812 3.72487 12.3642 3.46364 11.4059C3.20242 10.4476 3.33682 9.42624 3.83741 8.56555V8.5843ZM17.8563 11.7968L12.9278 8.9718L14.6319 8.00305C14.6403 7.99741 14.6502 7.99439 14.6604 7.99439C14.6705 7.99439 14.6805 7.99741 14.6889 8.00305L18.7685 10.328C19.3915 10.684 19.8992 11.2072 20.2325 11.8368C20.5659 12.4664 20.7111 13.1764 20.6514 13.8843C20.5916 14.5921 20.3294 15.2687 19.8951 15.8352C19.4608 16.4017 18.8724 16.8349 18.1983 17.0843V12.353C18.1946 12.2391 18.1612 12.1281 18.1013 12.0306C18.0414 11.9332 17.957 11.8527 17.8563 11.7968ZM19.554 9.2968L19.4336 9.2218L15.4047 6.9093C15.3047 6.84846 15.1896 6.81624 15.0721 6.81624C14.9547 6.81624 14.8395 6.84846 14.7396 6.9093L9.8111 9.71555V7.75305C9.8061 7.7445 9.80346 7.7348 9.80346 7.72492C9.80346 7.71505 9.8061 7.70535 9.8111 7.6968L13.897 5.37805C14.5222 5.02257 15.2371 4.85003 15.958 4.88059C16.6789 4.91115 17.3762 5.14356 17.9682 5.55064C18.5601 5.95772 19.0225 6.52265 19.301 7.17939C19.5796 7.83614 19.663 8.55755 19.5413 9.2593L19.554 9.2968ZM8.87989 12.7218L7.1695 11.753C7.15339 11.7405 7.1422 11.7228 7.13782 11.703V7.06555C7.13785 6.35289 7.34371 5.65499 7.73128 5.0536C8.11885 4.45222 8.67209 3.97224 9.32619 3.6699C9.98029 3.36756 10.7082 3.25537 11.4246 3.34647C12.141 3.43757 12.8162 3.7282 13.3712 4.1843L13.2636 4.25305L9.21563 6.55305C9.11158 6.60765 9.02504 6.68981 8.96573 6.79029C8.90642 6.89076 8.87669 7.00557 8.87989 7.1218V12.7218ZM9.80476 10.753L11.9966 9.50305L14.1948 10.753V13.253L11.9966 14.503L9.79843 13.253L9.80476 10.753Z" fill="#828282"></path>
+                <path d="M20.6816 10.1843C20.9588 9.34066 21.0063 8.4399 20.8192 7.57245C20.6321 6.70499 20.217 5.90134 19.6157 5.24216C19.0143 4.58298 18.2478 4.09146 17.393 3.81692C16.5382 3.54238 15.6253 3.49449 14.7459 3.67805C14.1453 3.01747 13.379 2.52468 12.524 2.24931C11.669 1.97394 10.7555 1.92571 9.87559 2.10947C8.99568 2.29324 8.18039 2.70252 7.51181 3.29608C6.84323 3.88965 6.34499 4.64654 6.06725 5.49055C5.18642 5.67292 4.3699 6.08122 3.70003 6.67426C3.03017 7.26731 2.53064 8.02413 2.25182 8.86842C1.97299 9.71271 1.92474 10.6146 2.11192 11.4832C2.2991 12.3517 2.71509 13.1562 3.31795 13.8155C3.09309 14.4899 3.01633 15.2037 3.09278 15.9095C3.16924 16.6154 3.39716 17.2971 3.76139 17.9093C4.30169 18.8351 5.12567 19.568 6.11483 20.0027C7.104 20.4373 8.20738 20.5512 9.26631 20.328C9.74353 20.8568 10.3291 21.2796 10.9844 21.5684C11.6396 21.8571 12.3495 22.0053 13.0672 22.003C14.1516 22.003 15.2081 21.6635 16.0847 21.0334C16.9612 20.4034 17.6125 19.5152 17.9449 18.4968C18.649 18.3539 19.3141 18.0649 19.8962 17.6489C20.4784 17.233 20.9642 16.6997 21.3214 16.0843C21.8585 15.1598 22.0858 14.0915 21.9709 13.032C21.856 11.9724 21.4048 10.9758 20.6816 10.1843ZM13.0798 20.6968C12.191 20.6968 11.3302 20.3894 10.6473 19.828L10.7677 19.7593L14.8029 17.4593C14.9069 17.4047 14.9935 17.3225 15.0528 17.2221C15.1121 17.1216 15.1418 17.0068 15.1386 16.8905V11.2655L16.8427 12.2405C16.8517 12.2441 16.8594 12.2501 16.865 12.2579C16.8706 12.2656 16.8739 12.2748 16.8744 12.2843V16.9343C16.876 17.4289 16.7785 17.9189 16.5875 18.3761C16.3964 18.8333 16.1156 19.2488 15.7611 19.5985C15.4067 19.9482 14.9856 20.2253 14.5222 20.4138C14.0588 20.6023 13.5621 20.6984 13.0608 20.6968H13.0798ZM4.90165 17.2593C4.46164 16.5029 4.3026 15.6189 4.45188 14.7593L4.57224 14.828L8.60749 17.128C8.70379 17.1829 8.81303 17.2118 8.92423 17.2118C9.03543 17.2118 9.14467 17.1829 9.24097 17.128L14.1758 14.3218V16.253C14.1797 16.2608 14.1817 16.2694 14.1817 16.278C14.1817 16.2867 14.1797 16.2953 14.1758 16.303L10.0962 18.628C9.66403 18.8748 9.18685 19.0352 8.69188 19.0999C8.19692 19.1647 7.69387 19.1326 7.21148 19.0055C6.72909 18.8784 6.27681 18.6587 5.88048 18.3591C5.48415 18.0595 5.15154 17.6858 4.90165 17.2593ZM3.83741 8.5843C4.28764 7.82089 4.99655 7.23878 5.83919 6.94055V11.6718C5.83595 11.7857 5.86434 11.8983 5.92128 11.9975C5.97823 12.0966 6.06156 12.1785 6.16227 12.2343L11.0717 15.028L9.36766 16.003C9.34918 16.0092 9.32914 16.0092 9.31065 16.003L5.23106 13.678C4.36041 13.1812 3.72487 12.3642 3.46364 11.4059C3.20242 10.4476 3.33682 9.42624 3.83741 8.56555V8.5843ZM17.8563 11.7968L12.9278 8.9718L14.6319 8.00305C14.6403 7.99741 14.6502 7.99439 14.6604 7.99439C14.6705 7.99439 14.6805 7.99741 14.6889 8.00305L18.7685 10.328C19.3915 10.684 19.8992 11.2072 20.2325 11.8368C20.5659 12.4664 20.7111 13.1764 20.6514 13.8843C20.5916 14.5921 20.3294 15.2687 19.8951 15.8352C19.4608 16.4017 18.8724 16.8349 18.1983 17.0843V12.353C18.1946 12.2391 18.1612 12.1281 18.1013 12.0306C18.0414 11.9332 17.957 11.8527 17.8563 11.7968ZM19.554 9.2968L19.4336 9.2218L15.4047 6.9093C15.3047 6.84846 15.1896 6.81624 15.0721 6.81624C14.9547 6.81624 14.8395 6.84846 14.7396 6.9093L9.8111 9.71555V7.75305C9.8061 7.7445 9.80346 7.7348 9.80346 7.72492C9.80346 7.71505 9.8061 7.70535 9.8111 7.6968L13.897 5.37805C14.5222 5.02257 15.2371 4.85003 15.958 4.88059C16.6789 4.91115 17.3762 5.14356 17.9682 5.55064C18.5601 5.95772 19.0225 6.52265 19.301 7.17939C19.5796 7.83614 19.663 8.55755 19.5413 9.2593L19.554 9.2968ZM8.87989 12.7218L7.1695 11.753C7.15339 11.7405 7.1422 11.7228 7.13782 11.703V7.06555C7.13785 6.35289 7.34371 5.65499 7.73128 5.0536C8.11885 4.45222 8.67209 3.97224 9.32619 3.6699C9.98029 3.36756 10.7082 3.25537 11.4246 3.34647C12.141 3.43757 12.8162 3.7282 13.3712 4.1843L13.2636 4.25305L9.21563 6.55305C9.11158 6.60765 9.02504 6.68981 8.96573 6.79029C8.90642 6.89076 8.87669 7.00557 8.87989 7.1218V12.7218ZM9.80476 10.753L11.9966 9.50305L14.1948 10.753V13.253L11.9966 14.503L9.79843 13.253L9.80476 10.753Z" stroke="#828282" stroke-width="0.2" mask="url(#path-1-outside-1_3606_3145)"></path>
+            </svg></div>
+        <div id="yt_article_summary_close_button" class="yt_article_summary_close_button">×</div>
+    </div><div class="glasp-ui-wrapper" id="glasp-ui-wrapper" style="height: 0px; width: 0px;"><iframe name="glasp-tooltip-iframe" id="glasp-tooltip-iframe" frameborder="0" scrolling="no" style="height: 48px; filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 2px 5px); position: relative; width: 0px !important; display: none;" src="./Servicios Turisticos_files/saved_resource.html"></iframe><iframe name="glasp-sidebar-iframe" id="glasp-sidebar-iframe" frameborder="0" style="max-width: 300px; height: 100%; background: url(&quot;https://storage.googleapis.com/glasp.co/src/img/loading_200.gif&quot;) center center / 40px no-repeat rgb(255, 255, 255); resize: horizontal; direction: rtl; margin: auto; position: fixed; top: 0px; right: 0px; left: auto; z-index: 2147483647; width: 0px !important; min-width: 0px !important; display: block;" src="./Servicios Turisticos_files/saved_resource(1).html"></iframe></div></body></html>
